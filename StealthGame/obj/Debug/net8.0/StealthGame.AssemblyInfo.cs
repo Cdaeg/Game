@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StealthGame")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d2171586d615c0335242aeed3f03fdf3a5a4163")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+adefbf9f227c80c2b060c8a4adaaa8e3c8354083")]
 [assembly: System.Reflection.AssemblyProductAttribute("StealthGame")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StealthGame")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

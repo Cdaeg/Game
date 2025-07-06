@@ -8,7 +8,7 @@ public class Player : Object
 
 	public Player(int x, int y) : base(x, y)
 	{
-		this.Speed = 25;
+		this.Speed = 10;
 	}
 	public void Move()
 	{

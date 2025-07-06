@@ -30,3 +30,5 @@ C:\Users\Caleb\Documents\GitHub\Game\StealthGame\obj\Debug\net8.0\refint\Stealth
 C:\Users\Caleb\Documents\GitHub\Game\StealthGame\obj\Debug\net8.0\StealthGame.pdb
 C:\Users\Caleb\Documents\GitHub\Game\StealthGame\obj\Debug\net8.0\StealthGame.genruntimeconfig.cache
 C:\Users\Caleb\Documents\GitHub\Game\StealthGame\obj\Debug\net8.0\ref\StealthGame.dll
+C:\Users\Caleb\Documents\GitHub\Game\StealthGame\bin\Debug\net8.0\Content\Floor.xnb
+C:\Users\Caleb\Documents\GitHub\Game\StealthGame\bin\Debug\net8.0\Content\Object.xnb

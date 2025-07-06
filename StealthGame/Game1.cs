@@ -10,6 +10,10 @@ public class Game1 : Game
     private SpriteBatch _spriteBatch;
     private Player plaver;
     private Enemy enemy;
+    private Texture2D floor;
+    private Texture2D obj;
+    private int[][] tiles;
+    private Rectangle[][] walls;
     public Game1()
     {
         _graphics = new GraphicsDeviceManager(this);
@@ -19,15 +23,41 @@ public class Game1 : Game
 
     protected override void Initialize()
     {
-        plaver = new Player(0, 0);
-        enemy = new Enemy(0, 0);
+        plaver = new Player(30, 30);
+        enemy = new Enemy(100, 30);
+        tiles = new int[25][];
+        walls = new Rectangle[25][];
+        for (int i = 0; i < tiles.Length; i++)
+        {
+            tiles[i] = new int[25];
+            for (int j = 0; j < tiles[i].Length; j++)
+            {
+                if (i == 0 || i == 24 || j == 0 || j == 24)
+                {
+                    tiles[i][j] = 1;
+                }
+                else
+                {
+                    tiles[i][j] = 0;
+                }
+            }
+        }
+        for (int i = 0; i < walls.Length; i++)
+        {
+            walls[i] = new Rectangle[25];
+            for (int j = 0; j < walls[i].Length; j++)
+            {
+                walls[i][j] = new Rectangle(i * 25, j * 25, 25, 25);
+            }
+        }
         base.Initialize();
     }
 
     protected override void LoadContent()
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
-        // TODO: use this.Content to load your game content here
+        floor = Content.Load<Texture2D>("Floor");
+        obj = Content.Load<Texture2D>("Object");
     }
     protected override void Update(GameTime gameTime)
     {
@@ -49,11 +79,18 @@ public class Game1 : Game
         {
             for (int y = 0; y < 25; y++)
             {
-                _spriteBatch.Draw(new Texture2D(GraphicsDevice, 15, 15), new Rectangle(x * 25, y * 25, 25, 25), Color.White);
+                if (tiles[x][y] == 1)
+                {
+                    _spriteBatch.Draw(floor, walls[x][y], Color.Black);
+                }
+                else
+                {
+                    _spriteBatch.Draw(floor, walls[x][y], Color.White);
+                }
             }
         }
-        _spriteBatch.Draw(new Texture2D(GraphicsDevice, 10, 10), plaver.Rect, Color.Beige);
-        _spriteBatch.Draw(new Texture2D(GraphicsDevice, 10, 10), enemy.Rect, Color.Red);
+        _spriteBatch.Draw(obj, plaver.Rect, Color.Blue);
+        _spriteBatch.Draw(obj, enemy.Rect, Color.Red);
 
         _spriteBatch.End();
 

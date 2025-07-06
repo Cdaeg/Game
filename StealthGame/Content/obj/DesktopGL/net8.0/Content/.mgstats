@@ -1,1 +1,3 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/Caleb/Documents/GitHub/Game/StealthGame/Content/Floor.png","C:/Users/Caleb/Documents/GitHub/Game/StealthGame/Content/bin/DesktopGL/Content/Floor.xnb","TextureProcessor","Texture2DContent",156,10085,0.2096369
+"C:/Users/Caleb/Documents/GitHub/Game/StealthGame/Content/Object.png","C:/Users/Caleb/Documents/GitHub/Game/StealthGame/Content/bin/DesktopGL/Content/Object.xnb","TextureProcessor","Texture2DContent",308,10085,0.0062018
