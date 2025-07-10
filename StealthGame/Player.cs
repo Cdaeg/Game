@@ -14,19 +14,38 @@ public class Player : Object
 	{
 		if (Keyboard.GetState().IsKeyDown(Keys.A))
 		{
-			this.X -= this.Speed;
+            DirMove("left");
 		}
         if (Keyboard.GetState().IsKeyDown(Keys.D))
         {
-            this.X += this.Speed;
+            DirMove("right");
         }
         if (Keyboard.GetState().IsKeyDown(Keys.W))
         {
-            this.Y -= this.Speed;
+            DirMove("up");
         }
         if (Keyboard.GetState().IsKeyDown(Keys.S))
         {
+            DirMove("down");
+        }
+    }
+    public void DirMove(string direction)
+    {
+        if (direction == "up")
+        {
+            this.Y -= this.Speed;
+        }
+        if (direction == "down")
+        {
             this.Y += this.Speed;
+        }
+        if (direction == "left")
+        {
+            this.X -= this.Speed;
+        }
+        if (direction == "right")
+        {
+            this.X += this.Speed;
         }
     }
 }

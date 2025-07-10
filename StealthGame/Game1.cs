@@ -8,7 +8,7 @@ public class Game1 : Game
 {
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
-    private Player plaver;
+    private Player player;
     private Enemy enemy;
     private Texture2D floor;
     private Texture2D obj;
@@ -23,8 +23,8 @@ public class Game1 : Game
 
     protected override void Initialize()
     {
-        plaver = new Player(30, 30);
-        enemy = new Enemy(100, 30);
+        player = new Player(25, 300);
+        enemy = new Enemy(400, 50);
         tiles = new int[25][];
         walls = new Rectangle[25][];
         for (int i = 0; i < tiles.Length; i++)
@@ -32,7 +32,7 @@ public class Game1 : Game
             tiles[i] = new int[25];
             for (int j = 0; j < tiles[i].Length; j++)
             {
-                if (i == 0 || i == 24 || j == 0 || j == 24)
+                if (i == 0 || i == 24 || j == 0 || j == 24||(i==13&&j>4&&j<21))
                 {
                     tiles[i][j] = 1;
                 }
@@ -50,6 +50,10 @@ public class Game1 : Game
                 walls[i][j] = new Rectangle(i * 25, j * 25, 25, 25);
             }
         }
+        _graphics.IsFullScreen = false;
+        _graphics.PreferredBackBufferWidth = 625;
+        _graphics.PreferredBackBufferHeight = 625;
+        _graphics.ApplyChanges();
         base.Initialize();
     }
 
@@ -64,7 +68,38 @@ public class Game1 : Game
         if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
             Exit();
 
-        plaver.Move();
+        player.Move();
+        for (int x = 0; x < walls.Length; x++)
+        {
+            for (int y = 0; y < walls[x].Length; y++)
+            {
+                if (player.Rect.Intersects(walls[x][y]) && tiles[x][y] == 1)
+                {
+                    if ((x*25) < player.X)
+                    {
+                        player.DirMove("right");
+                    }
+                    if ((x*25) > player.X)
+                    {
+                        player.DirMove("left");
+                    }
+                    if ((y*25) < player.Y)
+                    {
+                        player.DirMove("down");
+                    }
+                    if ((y*25) > player.Y)
+                    {
+                        player.DirMove("up");
+                    }
+                    System.Diagnostics.Debug.WriteLine(player.X + "  " + player.Y + "   " + x + "  " + y);
+                }
+            }
+        }
+        if (player.Rect.Intersects(enemy.Rect))
+        {
+            player.X = 30;
+            player.Y = 30;
+        }
         enemy.Move();
         base.Update(gameTime);
     }
@@ -89,7 +124,7 @@ public class Game1 : Game
                 }
             }
         }
-        _spriteBatch.Draw(obj, plaver.Rect, Color.Blue);
+        _spriteBatch.Draw(obj, player.Rect, Color.Blue);
         _spriteBatch.Draw(obj, enemy.Rect, Color.Red);
 
         _spriteBatch.End();

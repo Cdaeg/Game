@@ -7,19 +7,16 @@
       "RelativeMoniker": "D:0:0:{E0ACC194-0F52-4629-B4A0-82D305955725}|StealthGame.csproj|solutionrelative:game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E0ACC194-0F52-4629-B4A0-82D305955725}|StealthGame.csproj|c:\\users\\caleb\\documents\\github\\game\\stealthgame\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0ACC194-0F52-4629-B4A0-82D305955725}|StealthGame.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E0ACC194-0F52-4629-B4A0-82D305955725}|StealthGame.csproj|c:\\users\\caleb\\documents\\github\\game\\stealthgame\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0ACC194-0F52-4629-B4A0-82D305955725}|StealthGame.csproj|solutionrelative:enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0ACC194-0F52-4629-B4A0-82D305955725}|StealthGame.csproj|c:\\users\\caleb\\documents\\github\\game\\stealthgame\\object.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0ACC194-0F52-4629-B4A0-82D305955725}|StealthGame.csproj|solutionrelative:object.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0ACC194-0F52-4629-B4A0-82D305955725}|StealthGame.csproj|c:\\users\\caleb\\documents\\github\\game\\stealthgame\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0ACC194-0F52-4629-B4A0-82D305955725}|StealthGame.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Caleb\\Documents\\GitHub\\106-personal-repo-Cdaeg\\Exams\\FinalPractical\\Maze.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -37,45 +34,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Enemy.cs",
               "DocumentMoniker": "C:\\Users\\Caleb\\Documents\\GitHub\\Game\\StealthGame\\Enemy.cs",
               "RelativeDocumentMoniker": "Enemy.cs",
               "ToolTip": "C:\\Users\\Caleb\\Documents\\GitHub\\Game\\StealthGame\\Enemy.cs",
               "RelativeToolTip": "Enemy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-29T16:07:06.661Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Maze.cs",
-              "DocumentMoniker": "C:\\Users\\Caleb\\Documents\\GitHub\\106-personal-repo-Cdaeg\\Exams\\FinalPractical\\Maze.cs",
-              "RelativeDocumentMoniker": "..\\..\\106-personal-repo-Cdaeg\\Exams\\FinalPractical\\Maze.cs",
-              "ToolTip": "C:\\Users\\Caleb\\Documents\\GitHub\\106-personal-repo-Cdaeg\\Exams\\FinalPractical\\Maze.cs",
-              "RelativeToolTip": "..\\..\\106-personal-repo-Cdaeg\\Exams\\FinalPractical\\Maze.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T19:26:11.038Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\Caleb\\Documents\\GitHub\\Game\\StealthGame\\Player.cs",
               "RelativeDocumentMoniker": "Player.cs",
               "ToolTip": "C:\\Users\\Caleb\\Documents\\GitHub\\Game\\StealthGame\\Player.cs",
               "RelativeToolTip": "Player.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAoAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAUwBwAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-24T19:31:11.253Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Object.cs",
               "DocumentMoniker": "C:\\Users\\Caleb\\Documents\\GitHub\\Game\\StealthGame\\Object.cs",
               "RelativeDocumentMoniker": "Object.cs",
@@ -83,8 +68,7 @@
               "RelativeToolTip": "Object.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAcwBYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T18:14:30.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T18:14:30.503Z"
             },
             {
               "$type": "Document",
@@ -94,7 +78,7 @@
               "RelativeDocumentMoniker": "Game1.cs",
               "ToolTip": "C:\\Users\\Caleb\\Documents\\GitHub\\Game\\StealthGame\\Game1.cs*",
               "RelativeToolTip": "Game1.cs*",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBoAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAkwF0AAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-23T19:14:18.338Z",
               "EditorCaption": ""
