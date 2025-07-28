@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 
 public class Enemy : Object
 {
@@ -18,4 +19,8 @@ public class Enemy : Object
             this.Speed = 5;
         }
     }
+	public void Search(Rectangle target, Rectangle[][] walls)
+	{
+
+	}
 }

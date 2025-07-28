@@ -1,6 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System;
+
 
 namespace StealthGame;
 
@@ -10,6 +12,7 @@ public class Game1 : Game
     private SpriteBatch _spriteBatch;
     private Player player;
     private Enemy enemy;
+    private Random rand;
     private Texture2D floor;
     private Texture2D obj;
     private int[][] tiles;
@@ -27,12 +30,13 @@ public class Game1 : Game
         enemy = new Enemy(400, 50);
         tiles = new int[25][];
         walls = new Rectangle[25][];
+        rand = new Random();
         for (int i = 0; i < tiles.Length; i++)
         {
             tiles[i] = new int[25];
             for (int j = 0; j < tiles[i].Length; j++)
             {
-                if (i == 0 || i == 24 || j == 0 || j == 24||(i==13&&j>4&&j<21))
+                if (i == 0 || i == 24 || j == 0 || j == 24 || (i == 13 && j > 4 && j < 21))
                 {
                     tiles[i][j] = 1;
                 }
@@ -41,6 +45,17 @@ public class Game1 : Game
                     tiles[i][j] = 0;
                 }
             }
+        }
+        for (int i = 0; i < 6; i++)
+        {
+            int x = rand.Next(0, 25);
+            int y = rand.Next(0, 25);
+            while (tiles[x][y] != 0)
+            {
+                x = rand.Next(0, 25);
+                y = rand.Next(0, 25);
+            }
+            tiles[x][y] = 2;
         }
         for (int i = 0; i < walls.Length; i++)
         {
@@ -93,6 +108,10 @@ public class Game1 : Game
                     }
                     System.Diagnostics.Debug.WriteLine(player.X + "  " + player.Y + "   " + x + "  " + y);
                 }
+                if (player.Rect.Intersects(walls[x][y]) && tiles[x][y] == 2)
+                {
+                    tiles[x][y] = 0;
+                }
             }
         }
         if (player.Rect.Intersects(enemy.Rect))
@@ -117,6 +136,10 @@ public class Game1 : Game
                 if (tiles[x][y] == 1)
                 {
                     _spriteBatch.Draw(floor, walls[x][y], Color.Black);
+                }
+                else if (tiles[x][y] == 2)
+                {
+                    _spriteBatch.Draw(floor, walls[x][y], Color.Green);
                 }
                 else
                 {
