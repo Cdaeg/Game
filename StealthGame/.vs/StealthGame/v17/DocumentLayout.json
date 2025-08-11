@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{E0ACC194-0F52-4629-B4A0-82D305955725}|StealthGame.csproj|solutionrelative:game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0ACC194-0F52-4629-B4A0-82D305955725}|StealthGame.csproj|c:\\users\\caleb\\documents\\github\\game\\stealthgame\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0ACC194-0F52-4629-B4A0-82D305955725}|StealthGame.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E0ACC194-0F52-4629-B4A0-82D305955725}|StealthGame.csproj|c:\\users\\caleb\\documents\\github\\game\\stealthgame\\object.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0ACC194-0F52-4629-B4A0-82D305955725}|StealthGame.csproj|solutionrelative:object.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0ACC194-0F52-4629-B4A0-82D305955725}|StealthGame.csproj|c:\\users\\caleb\\documents\\github\\game\\stealthgame\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0ACC194-0F52-4629-B4A0-82D305955725}|StealthGame.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,36 +38,38 @@
               "Title": "Enemy.cs",
               "DocumentMoniker": "C:\\Users\\Caleb\\Documents\\GitHub\\Game\\StealthGame\\Enemy.cs",
               "RelativeDocumentMoniker": "Enemy.cs",
-              "ToolTip": "C:\\Users\\Caleb\\Documents\\GitHub\\Game\\StealthGame\\Enemy.cs",
-              "RelativeToolTip": "Enemy.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAxwBcAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Caleb\\Documents\\GitHub\\Game\\StealthGame\\Enemy.cs*",
+              "RelativeToolTip": "Enemy.cs*",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwBAAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-29T16:07:06.661Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\Caleb\\Documents\\GitHub\\Game\\StealthGame\\Player.cs",
               "RelativeDocumentMoniker": "Player.cs",
               "ToolTip": "C:\\Users\\Caleb\\Documents\\GitHub\\Game\\StealthGame\\Player.cs",
               "RelativeToolTip": "Player.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAUwBwAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T19:31:11.253Z"
+              "WhenOpened": "2025-06-24T19:31:11.253Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Object.cs",
               "DocumentMoniker": "C:\\Users\\Caleb\\Documents\\GitHub\\Game\\StealthGame\\Object.cs",
               "RelativeDocumentMoniker": "Object.cs",
               "ToolTip": "C:\\Users\\Caleb\\Documents\\GitHub\\Game\\StealthGame\\Object.cs",
               "RelativeToolTip": "Object.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAcwBYAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T18:14:30.503Z"
+              "WhenOpened": "2025-06-24T18:14:30.503Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -77,7 +79,7 @@
               "RelativeDocumentMoniker": "Game1.cs",
               "ToolTip": "C:\\Users\\Caleb\\Documents\\GitHub\\Game\\StealthGame\\Game1.cs",
               "RelativeToolTip": "Game1.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBEAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAkwGsAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-23T19:14:18.338Z",
               "EditorCaption": ""

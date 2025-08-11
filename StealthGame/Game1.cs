@@ -26,10 +26,9 @@ public class Game1 : Game
 
     protected override void Initialize()
     {
-        player = new Player(25, 300);
-        enemy = new Enemy(400, 50);
         tiles = new int[25][];
         walls = new Rectangle[25][];
+        player = new Player(25, 300);
         rand = new Random();
         for (int i = 0; i < tiles.Length; i++)
         {
@@ -65,6 +64,7 @@ public class Game1 : Game
                 walls[i][j] = new Rectangle(i * 25, j * 25, 25, 25);
             }
         }
+        enemy = new Enemy(400, 50, walls);
         _graphics.IsFullScreen = false;
         _graphics.PreferredBackBufferWidth = 625;
         _graphics.PreferredBackBufferHeight = 625;
@@ -106,7 +106,6 @@ public class Game1 : Game
                     {
                         player.DirMove("up");
                     }
-                    System.Diagnostics.Debug.WriteLine(player.X + "  " + player.Y + "   " + x + "  " + y);
                 }
                 if (player.Rect.Intersects(walls[x][y]) && tiles[x][y] == 2)
                 {
@@ -120,6 +119,7 @@ public class Game1 : Game
             player.Y = 30;
         }
         enemy.Move();
+        enemy.Search(player.Rect, tiles);
         base.Update(gameTime);
     }
 
