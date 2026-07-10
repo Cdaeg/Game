@@ -4,10 +4,16 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/Caleb/Documents/GitHub/Game/StealthGame/Content/Bear.png</File>
+    <File>C:/Users/Caleb/Documents/GitHub/Game/StealthGame/Content/Fish.png</File>
     <File>C:/Users/Caleb/Documents/GitHub/Game/StealthGame/Content/Floor.png</File>
     <File>C:/Users/Caleb/Documents/GitHub/Game/StealthGame/Content/Object.png</File>
+    <File>C:/Users/Caleb/Documents/GitHub/Game/StealthGame/Content/Penguin.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>

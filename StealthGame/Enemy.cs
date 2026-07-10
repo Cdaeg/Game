@@ -6,12 +6,31 @@ using Microsoft.Xna.Framework.Input;
 public class Enemy : Object
 {
 	private Rectangle goal;
+    private Rectangle _startPoint;
+    private Rectangle _endPoint;
 	private Rectangle[][] _walls;
-	public Enemy(int x, int y, Rectangle[][] walls) : base(x, y)
+    public Rectangle Goal
+    {
+        get { return goal; }
+        set { goal = value; }
+    }
+    public Rectangle StartPoint
+    {
+        get { return _startPoint; }
+        set { _startPoint = value; }
+    }
+    public Rectangle EndPoint
+    {
+        get { return _endPoint; }
+        set { _endPoint = value; }
+    }
+    public Enemy(int x, int y, Rectangle[][] walls) : base(x, y)
 	{
 		this.Speed = 5;
 		_walls = walls;
 		goal = walls[16][22];
+        _endPoint = walls[16][22];
+        _startPoint = walls[16][4];
 	}
 	public void Move()
 	{
@@ -135,15 +154,14 @@ public class Enemy : Object
         }
         if (goal.Intersects(this.Rect))
 		{
-			if (this.Rect.Y > 300)
+			if (goal==_startPoint)
 			{
-				goal = _walls[16][4];
+				goal = _endPoint;
 			}
 			else
 			{
-				goal = _walls[16][22];
+				goal = _startPoint;
 			}
 		}
-        System.Diagnostics.Debug.WriteLine(goal.X + " " + goal.Y + " " + _walls[16][22].X + " " + _walls[16][22].Y);
 	}
 }

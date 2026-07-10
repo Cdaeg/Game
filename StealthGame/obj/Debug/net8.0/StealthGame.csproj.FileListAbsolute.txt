@@ -32,3 +32,6 @@ C:\Users\Caleb\Documents\GitHub\Game\StealthGame\obj\Debug\net8.0\StealthGame.ge
 C:\Users\Caleb\Documents\GitHub\Game\StealthGame\obj\Debug\net8.0\ref\StealthGame.dll
 C:\Users\Caleb\Documents\GitHub\Game\StealthGame\bin\Debug\net8.0\Content\Floor.xnb
 C:\Users\Caleb\Documents\GitHub\Game\StealthGame\bin\Debug\net8.0\Content\Object.xnb
+C:\Users\Caleb\Documents\GitHub\Game\StealthGame\bin\Debug\net8.0\Content\Fish.xnb
+C:\Users\Caleb\Documents\GitHub\Game\StealthGame\bin\Debug\net8.0\Content\Penguin.xnb
+C:\Users\Caleb\Documents\GitHub\Game\StealthGame\bin\Debug\net8.0\Content\Bear.xnb

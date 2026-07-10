@@ -29,6 +29,6 @@ public class Object
 	}
 	public Object(int x, int y)
 	{
-		_rect = new Rectangle(x, y, 20, 20);
+		_rect = new Rectangle(x, y, 50, 50);
 	}
 }

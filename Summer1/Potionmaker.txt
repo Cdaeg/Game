@@ -1,0 +1,11 @@
+Health Potion
+Stamina Potion
+Mana Potion
+Strength Potion
+Antidote
+Soft Potion
+---
+Welcome! Please, come in!
+Feel free to look around!
+I hope it's helpful!
+Thank you! Please come again!

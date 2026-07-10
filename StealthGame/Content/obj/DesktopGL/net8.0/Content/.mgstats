@@ -1,3 +1,6 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/Caleb/Documents/GitHub/Game/StealthGame/Content/Bear.png","C:/Users/Caleb/Documents/GitHub/Game/StealthGame/Content/bin/DesktopGL/Content/Bear.xnb","TextureProcessor","Texture2DContent",334,10085,0.091737
+"C:/Users/Caleb/Documents/GitHub/Game/StealthGame/Content/Fish.png","C:/Users/Caleb/Documents/GitHub/Game/StealthGame/Content/bin/DesktopGL/Content/Fish.xnb","TextureProcessor","Texture2DContent",235,10085,0.2117247
 "C:/Users/Caleb/Documents/GitHub/Game/StealthGame/Content/Floor.png","C:/Users/Caleb/Documents/GitHub/Game/StealthGame/Content/bin/DesktopGL/Content/Floor.xnb","TextureProcessor","Texture2DContent",156,10085,0.2096369
 "C:/Users/Caleb/Documents/GitHub/Game/StealthGame/Content/Object.png","C:/Users/Caleb/Documents/GitHub/Game/StealthGame/Content/bin/DesktopGL/Content/Object.xnb","TextureProcessor","Texture2DContent",308,10085,0.0062018
+"C:/Users/Caleb/Documents/GitHub/Game/StealthGame/Content/Penguin.png","C:/Users/Caleb/Documents/GitHub/Game/StealthGame/Content/bin/DesktopGL/Content/Penguin.xnb","TextureProcessor","Texture2DContent",294,10085,0.007518
