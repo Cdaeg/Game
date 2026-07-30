@@ -1,0 +1,2 @@
+A demonstration of a C++ class which can be used for NPCs in a text-based game interface, as well as a sample of subclasses which can be used for more specialized purposes.
+The main program is a simple interactive demo of three NPCs made within those subclasses.
